@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="Mor Fall Diop">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="icon" href="img/icon.ico" type="image/x-icon">
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<!-- stylesheet del CDN di Bootstrap -->
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/style.css"> <!-- mio stylesheet -->
+			<link rel="stylesheet" href="css/responsive.css"> <!-- stylesheet responsive -->
+			<title>Mor Fall Diop</title>
+		</head>
+		<body>
+			<!------------------------------- navbar ------------------------------------------>
+			<nav class="nav-custom navbar navbar-expand-lg navbar-light bg-light fixed-top">
+				<a class="navbar-brand" href="index.html">Mor Fall Diop</a>
+				<div id="navbarNav">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="index.html#work" onclick="closeMenu()">Work</a>
+					<a class="nav-link" href="index.html#work.1" onclick="closeMenu()">Storyline</a>
+					<a class="nav-link" href="index.html#work.2" onclick="closeMenu()">Development skills</a>
+					<a class="nav-link" href="index.html#about" onclick="closeMenu()">About</a>
+					<a class="nav-link" href="index.html#contact" onclick="closeMenu()">Contact</a>
+				</div>
+				<!--------------- menu for mobile devices ------------------>
+				<i class="material-icons menu" onclick="openMenu()">menu</i>
+				<i class="material-icons menu" onclick="closeMenu()">close</i>
+			</nav>
+			<!--------- pagina ------------>
+			<!--todo: it's not 100% responsive, let's find out why -->
+			<div class="page">
+			<!------- home page --------->
+				<section class="home">
+					<p>Hello everyone, I am&nbsp;</p>
+					<p>MOR FALL DIOP,&nbsp;</p>
+					<img src="img/Mor Fall Diop.png">
+					<p>and I'm specializing in<br><span>Web Development</span></p>
+					<a class="home-link" style="color: black;" href="index.html#work">Take a look at my work</a>
+					<a class="home-link" style="color: black;" href="index.html#work.1">Take a look at my work</a>
+				</section>
+			<!------------- first section ---------------->
+				<section id="work" class="work-container">
+					<h2 class="h2">WORK</h2>
+					<div class="row">
+						<!--------- first section, first part ------------>
+						<article id="work.1" class="col-a">
+							<h3 class="h3">STORYLINE</h3>
+							<div class="timeline-container"><!-- linea temporale in cui mostro il mio percorso -->
+								<div class="timeline-bar">
+									<div id="1" class="bar-circle" onclick="contentClicked(this.id)"></div>
+									<div id="2" class="bar-circle" onclick="contentClicked(this.id)"></div>
+									<div id="3" class="bar-circle" onclick="contentClicked(this.id)"></div>
+								</div>
+								<div class="timeline-content">
+									<div class="timeline-text shown">
+										<h6>High School degree at "Serafino Riva" - From 12<sup>th</sup> September 2013 to 8<sup>th</sup> July 2018</h6>
+										<p><br>I attended the <span>"IT and Telecommunications"</span> course. It has allowed me to learn the basis of
+											IT and programming.
+										</p>
+										<i class="material-icons">school</i>
+									</div>
+									<div class="timeline-text">
+										<h6>Digital Academy - From 4<sup>th</sup> April 2019 to 23<sup>rd</sup> May 2019</h6>
+										<p><br>It was a course organized by Umana S.p.A., to developing figures that would become <span>Junior Java Developers</span>.
+											The aim was to hire the best figures among us into a big IT firm.
+										</p>
+										<i class="material-icons">laptop</i>
+									</div>
+									<div class="timeline-text">
+										<h6>Start2Impact - Since 19<sup>th</sup> August 2019</h6>
+										<p><br>I was looking for a way to <span>study web development</span>, when I found the Start2Impact site. It's an
+											online community that I've joined because I want to <span>increase my knowledge</span>, in order to <span>work in the IT field</span>.
+											This is my goal.
+										</p>
+										<img src="img/start2impact.png"/>
+									</div>
+									<div id="text-shower" class="text-shower shown" style="left: 2.6%;">
+										
+									</div>
+								</div>
+							</div>
+						</article>
+						<div class="divides"></div>
+						<!-------- first section, second part -------->
+						<article id="work.2" class="col-b">
+							<h3 class="h3">DEVELOPMENT SKILLS</h3>
+							<div class="skills-container">
+								<div class="skill-carousel"><!-- carousel per mostrare le mie competenze -->
+									<div class="item">
+										<img src="img/html.png" class="image" alt="HTML">
+									</div>
+									<div class="item">
+										<img src="img/css.png" class="image" alt="CSS">
+									</div>
+									<div class="item">
+										<img src="img/javascript.png" class="image" alt="JavaScript">
+									</div>
+									<div class="item">
+										<img src="img/bootstrap.png" class="image" alt="Bootstrap">
+									</div>
+									<div class="item">
+										<img src="img/c++.png" class="image" alt="C++">
+									</div>
+									<div class="item">
+										<img src="img/java.png" class="image" alt="Java">
+									</div>
+									<div class="item">
+										<img src="img/php.png" class="image" alt="PHP">
+									</div>
+									<div class="item">
+										<img src="img/mysql.png" class="image" alt="MySQL">
+									</div>
+									<p onclick="showPrevImage()">&lt;</p>
+									<p onclick="showNextImage()">&gt;</p>
+								</div>
+								<!--todo: this skillbar can be removed, there's no point where you'll know 100% of a language -->
+								<!--<div class="skillbar-container">
+									<div id="level" class="skill-level"></div>
+								</div>-->
+							</div>
+							<p class="skill-p">The slideshow shows the technologies which I've already worked with, and I gained a basic understanding.
+								But I know that I'll get to learn them more in depth and add other programming languages to my skillset, to achieve my goal.<br><br>
+								Either click
+								<a class="body-link" target="_blank" href="https://drive.google.com/file/d/1RB1FLr-rn0V7YedteSGC_rZzX5lYWZRz/view?usp=sharing">here</a>
+								if you want to look at my CV, or click
+								<a class="body-link" target="_blank" href="https://talent.start2impact.it/profile/mor-fall-diop">here</a>
+								if you want to look at my start2impact portfolio.
+							</p>
+						</article>	
+					</div>
+					<!--todo: a temporarily void section, with a coming soon message -->
+					<!--<article class="project-container"> sezione futura dedicata alla lista dei progetti
+						<h4 id="PROJECTS" class="h">MY PROJECTS</h4>
+						<p>So far this website is the only project that I've just made, but I'm going to list all my projects here.</p>
+					</article>-->
+				</section>
+			<!--------------- section two ---------------->
+				<section id="about" class="about-container">
+					<h2 class="h2">ABOUT</h2>
+					<article>
+						<img src="img/Mor Fall Diop.png" alt="My picture">
+						<div>Hi, my name's Mor Fall, I'm 20 years old and I live in Villongo, a small town in Italy, but I'm a Senegal native.<br>
+							I love sports (especially football), nature, animals, music, movies, TV series and IT.<br>
+							Below, you can read the <span>three main reasons that motivated me the most</span> to <span>to become a Full Stack Developer</span>:<br>
+							<ul>
+								<li>that's a <span>complete job</span>: thanks to the technologies that I'm going to learn, I'll be able to build a whole website from scratch;</li>
+								<li>surfing the net, I read that <span>developers are really required</span>;</li>
+								<li>furthermore, I've already had <span>little experiences in programming</span>, so I said: "This could be my job !".</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+			</div>
+			<!----------- footer ------------->
+			<footer id="contact" class="footer">
+				<h2 class="h2">CONTACT</h2>
+				<div class="social-box"><!-- link ai social -->
+					<a class="facebook" href="https://www.facebook.com/Mor.Fall.Diop.99" target="_blank"></a>
+					<a class="instagram" href="https://www.instagram.com/papy_diop/" target="_blank"></a><!-- il link per la mail richiede l'accesso a gmail -->
+					<a class="mail" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=morfall.papydiop99@gmail.com" target="_blank"></a>
+					<a class="linkedin" href="https://www.linkedin.com/in/mor-fall-diop-07b40a18b" target="_blank"></a>
+					<a class="github" href="https://github.com/diopmorfall" target="_blank"></a>
+				</div>
+			</footer>
+		</body>
+		<script src="js/animations.js" defer></script><!-- mio file js -->
+	</html>
