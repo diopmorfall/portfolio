@@ -186,7 +186,6 @@ section{
     display: flex;
     flex-direction: row;
     left: 0;
-    display: none;
 }
 .col-a, .col-b{
     position: absolute;
