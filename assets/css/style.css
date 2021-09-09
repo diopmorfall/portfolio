@@ -1,0 +1,119 @@
+.flex, .flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, body, nav ul, .page, .flex-row, nav, nav .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, body, nav ul, .page {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.flex-row, nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.flex-align-center, .flex-full-center, nav ul li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.flex-justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.flex-full-center, nav ul li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.relative, body, .page {
+  position: relative; }
+
+.absolute, nav .mobile-menu, nav .mobile-menu::before {
+  position: absolute; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
+
+@font-face {
+  font-family: 'social';
+  src: url(../font/social.woff) format("woff");
+  font-weight: 400;
+  font-size: 20px; }
+
+body {
+  width: 100vw;
+  background-color: #94c75a;
+  font-size: 16px; }
+
+nav {
+  width: 100%;
+  height: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 0 15px; }
+  nav .brand {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    color: black; }
+  nav .mobile-menu {
+    top: 60px;
+    width: 85%;
+    height: 330px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    z-index: 2; }
+    nav .mobile-menu::before {
+      content: "";
+      width: 0;
+      height: 0;
+      right: 0;
+      top: -30px;
+      border-bottom: 35px solid white;
+      border-left: 35px solid transparent;
+      z-index: 2; }
+  nav ul {
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style-type: none;
+    border: 2px solid red; }
+    nav ul li {
+      height: 15%; }
+      nav ul li a {
+        text-decoration: none;
+        color: black; }
+      nav ul li:last-of-type {
+        height: 20%;
+        border-radius: 100px;
+        background-color: darkgreen; }
+  nav .hidden, nav .menu:last-of-type {
+    display: none; }
+
+.page {
+  width: 90%;
+  margin: auto; }
+  .page section {
+    margin-bottom: 20px; }
+
+.home {
+  border: 1px solid salmon; }
