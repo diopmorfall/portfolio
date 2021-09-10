@@ -1,26 +1,31 @@
-.flex, .flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, body, nav ul, .page, .flex-row, nav, nav .mobile-menu {
+.flex, .flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, .home a, .links a, body, nav ul, .page, .home, .work-container, .work-container .row, .work-container .row .column, .toolbox .skills-container, .toolbox .skills-grid, .projects, .project-infos, footer, .flex-row, .flex-row-align-center, .skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div, nav, .links, article .links, .socials, nav .mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, body, nav ul, .page {
+.flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, .home a, .links a, body, nav ul, .page, .home, .work-container, .work-container .row, .work-container .row .column, .toolbox .skills-container, .toolbox .skills-grid, .projects, .project-infos, footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.flex-row, nav {
+.flex-row, .flex-row-align-center, .skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div, nav, .links, article .links, .socials {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+
+.flex-row-align-center, .skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .flex-align-center, .flex-full-center, nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
-.flex-justify-center {
+.flex-justify-center, .home a, .links a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -30,11 +35,20 @@
       -ms-flex-pack: center;
           justify-content: center; }
 
-.relative, body, .page {
+.relative, body, .page, .page section, footer {
   position: relative; }
 
 .absolute, nav .mobile-menu, nav .mobile-menu::before {
   position: absolute; }
+
+.hidden, nav .mobile-menu, nav .menu:last-of-type, .divides {
+  display: none; }
+
+.skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 20%;
+  background-color: lime; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -51,10 +65,13 @@
 
 body {
   width: 100vw;
-  background-color: #94c75a;
-  font-size: 16px; }
+  background-color: #7ed957;
+  font-size: 16px;
+  color: white; }
 
 nav {
+  position: fixed;
+  z-index: 2;
   width: 100%;
   height: 50px;
   -webkit-box-pack: justify;
@@ -63,13 +80,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px 0 15px; }
+  padding: 0 15px 0 15px;
+  background-color: #008037; }
   nav .brand {
     font-size: 20px;
     font-style: italic;
     font-weight: 600;
     text-decoration: none;
-    color: black; }
+    color: white; }
   nav .mobile-menu {
     top: 60px;
     width: 85%;
@@ -106,14 +124,142 @@ nav {
         height: 20%;
         border-radius: 100px;
         background-color: darkgreen; }
-  nav .hidden, nav .menu:last-of-type {
-    display: none; }
 
 .page {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 90%;
   margin: auto; }
   .page section {
-    margin-bottom: 20px; }
+    margin-bottom: 50px; }
 
 .home {
-  border: 1px solid salmon; }
+  top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 95vh;
+  text-align: center; }
+  .home img {
+    width: 275px;
+    margin: auto;
+    opacity: 0.4;
+    border-radius: 150px; }
+  .home .text {
+    font-style: italic; }
+    .home .text p, .home .text h1 {
+      margin-bottom: 25px; }
+  .home a {
+    width: 60%;
+    margin: auto;
+    height: 40px;
+    background-color: darkgreen;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white; }
+
+.work-container h2 {
+  display: none; }
+
+.work-container .row .column {
+  height: 100vh;
+  text-align: center; }
+
+.toolbox .skills-container {
+  height: 90%; }
+
+.toolbox .skills-grid {
+  height: 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.toolbox .current-skills h4 {
+  padding-top: 40px;
+  margin-bottom: 20px; }
+
+.toolbox .current-skills .skills-row, .toolbox .current-skills .skills-grid > div, .toolbox .current-skills > div {
+  height: 70%; }
+
+.projects {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .projects h3 {
+    margin-bottom: 40px; }
+
+.slider {
+  width: 80%;
+  margin: 0 auto;
+  height: 45%;
+  background-color: darkgreen; }
+
+.project-infos {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .project-infos p {
+    padding: 0 20px 50px 20px; }
+
+.links {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .links a {
+    background-color: darkgreen;
+    height: 40px;
+    width: 30%;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none; }
+
+.about-container h2 {
+  text-align: center;
+  margin-bottom: 15px; }
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  article img {
+    display: block;
+    width: 220px;
+    margin: auto; }
+  article p {
+    padding: 10px 20px;
+    margin-bottom: 40px; }
+  article .links {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    article .links a:first-of-type {
+      width: 30%; }
+    article .links a:last-of-type {
+      width: 45%; }
+
+footer {
+  height: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  border: 2px solid black; }
+  footer h2 {
+    margin-bottom: 50px; }
+
+.socials {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 1px solid red;
+  width: 90%;
+  margin: auto; }

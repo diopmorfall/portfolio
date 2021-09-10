@@ -3,7 +3,7 @@
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			<meta name="author" content="Mor Fall Diop">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="icon" href="img/icon.ico" type="image/x-icon">
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,10 +11,9 @@
 			<title>Mor Fall Diop</title>
 		</head>
 		<body>
-			<!------------------------------- navbar ------------------------------------------>
 			<nav>
 				<a class="brand" href="index.html">Mor Fall Diop</a>
-				<div class="mobile-menu hidden">
+				<div class="mobile-menu">
 					<ul>
 						<li><a class="nav-link" href="index.html">Home</a></li>
 						<li><a class="nav-link" href="index.html#work" onclick="closeMenu()">Work</a></li>
@@ -31,98 +30,127 @@
 					<i class="material-icons menu" onclick="closeMenu()">close</i>
 				</div>
 			</nav>
-			<!--------- pagina ------------>
 			<!--todo: it's not 100% responsive, let's find out why -->
 			<div class="page">
-			<!------- home page --------->
+			<!------- home --------->
 				<section class="home">
-					<p>Hello everyone, I am&nbsp;</p>
-					<p>MOR FALL DIOP,&nbsp;</p>
-					<img src="img/Mor Fall Diop.png">
-					<p>and I'm specializing in<br><span>Web Development</span></p>
-					<a class="home-link" style="color: black;" href="index.html#work">Take a look at my work</a>
-					<a class="home-link" style="color: black;" href="index.html#work.1">Take a look at my work</a>
+					<img src="/assets/img/home-background.jpg" alt="Home">
+					<!--todo: slider of code-related images -->
+					<div class="text">
+						<p>Hi everyone, I am</p>
+						<h1>MOR FALL DIOP</h1>
+						<p>aspiring <span>Web Developer</span></p>
+					</div>
+					<a href="index.html#work">Take a look at my work</a>
 				</section>
-			<!------------- first section ---------------->
+			<!------------- skills ---------------->
 				<section id="work" class="work-container">
 					<h2 class="h2">WORK</h2>
 					<div class="row">
-						<!--------- first section, first part ------------>
-						<div id="work.1" class="column">
-							<h3 class="h3">SKILLS</h3>
-							<!--todo: skills section moves here-->
+						<!--------- toolbox ------------>
+						<div id="toolbox" class="column toolbox">
+							<h3 class="h3">Toolbox</h3>
 							<div class="skills-container">
-								<div class="skill-carousel"><!-- carousel per mostrare le mie competenze -->
-									<div class="item">
-										<img src="img/html.png" class="image" alt="HTML">
+								<div class="skills-grid">
+									<div>
+										<div class="item">
+											Img
+										</div>
+										<div class="item">
+											Room
+										</div>
+										<div class="item">
+											Punk
+										</div>
 									</div>
-									<div class="item">
-										<img src="img/css.png" class="image" alt="CSS">
+									<div>
+										<div class="item">
+											Gear
+										</div>
+										<div class="item">
+											Nitoryu
+										</div>
+										<div class="item">
+											Jambe
+										</div>
 									</div>
-									<div class="item">
-										<img src="img/javascript.png" class="image" alt="JavaScript">
+									<div>
+										<div class="item">
+											Point
+										</div>
+										<div class="item">
+											Solid
+										</div>
 									</div>
-									<div class="item">
-										<img src="img/bootstrap.png" class="image" alt="Bootstrap">
-									</div>
-									<div class="item">
-										<img src="img/c++.png" class="image" alt="C++">
-									</div>
-									<div class="item">
-										<img src="img/java.png" class="image" alt="Java">
-									</div>
-									<div class="item">
-										<img src="img/php.png" class="image" alt="PHP">
-									</div>
-									<div class="item">
-										<img src="img/mysql.png" class="image" alt="MySQL">
-									</div>
-									<p onclick="showPrevImage()">&lt;</p>
-									<p onclick="showNextImage()">&gt;</p>
-									<!--todo: addeventlistener, so that it stays only in the js file -->
+									
+									<!--todo: look for svg icons of your skills -->
 								</div>
+								<div class="current-skills">
+									<h4>Currently improving my knowledge and understanding in:</h4>
+									<div>
+										<div class="item">
+											Fleur
+										</div>
+										<div class="item">
+											Tempo
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="divides"></div>
-						<!-------- first section, second part -------->
-						<article id="work.2" class="column">
-							<h3 class="h3">PROJECTS</h3>
-							<!--todo: slideshow of screenshots of your projects, with live link -->
-						</article>	
+						<!-------- projects -------->
+						<div id="projects" class="column projects">
+							<h3 class="h3">Projects</h3>
+							<div class="slider">
+								<!--todo: take screenshots of your projects -->
+							</div>
+							<div class="project-infos">
+								<h4>Project title</h4>
+								<p>Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis veritatis nihil
+									aliquid, facere iste consequatur perspiciatis impedit expedita autem voluptatum at ipsa rerum hic
+									distinctio, aspernatur ut nulla sint voluptas. </p>
+								<div class="links">
+									<a href="#" target="_blank">Live</a>
+									<a href="#" target="_blank">Source</a>
+								</div>
+							</div>
+						</div>	
 					</div>
 				</section>
-			<!--------------- section two ---------------->
+			<!--------------- about me ---------------->
 				<section id="about" class="about-container">
-					<h2 class="h2">ABOUT</h2>
+					<h2 class="h2">Who am I ?</h2>
 					<article>
-						<!--todo: timeline section (smaller than the first one) moves here, for more coherency -->
-						<img src="img/Mor Fall Diop.png" alt="My picture">
-						<div>Hi, my name's Mor Fall, I'm 20 years old and I live in Villongo, a small town in Italy, but I'm a Senegal native.<br>
-							I love sports (especially football), nature, animals, music, movies, TV series and IT.<br>
-							Below, you can read the <span>three main reasons that motivated me the most</span> to <span>to become a Full Stack Developer</span>:<br>
-							<ul>
-								<li>that's a <span>complete job</span>: thanks to the technologies that I'm going to learn, I'll be able to build a whole website from scratch;</li>
-								<li>surfing the net, I read that <span>developers are really required</span>;</li>
-								<li>furthermore, I've already had <span>little experiences in programming</span>, so I said: "This could be my job !".</li>
-							</ul>
-							<a class="body-link" target="_blank" href="https://drive.google.com/file/d/1RB1FLr-rn0V7YedteSGC_rZzX5lYWZRz/view?usp=sharing">here</a>
-							if you want to look at my CV, or click
-							<a class="body-link" target="_blank" href="https://talent.start2impact.it/profile/mor-fall-diop">here</a>
-							if you want to look at my start2impact portfolio.
+						<img src="/assets/img/Mor Fall Diop.png" alt="My picture">
+						<p>Hi there! I'm Mor Fall, a 22 years old Senegal native guy living in Italy.<br><br>
+							My dream is to become a Full Stack Developer: I discovered the basics of web development in high school, but
+							I fell in love with it thanks to a course I attended in 2019.<br><br>
+							I've never worked as a developer yet but I'm aquiring a mindset and technical skills that'll' help me
+							become that figure to make a positive impact, thanks to the online community of
+							<a href="#">start2impact.com</a><br><br>
+							You can also find me watching sports, playing football, reading books or <a href="#">articles</a> to become a
+							better person, doing research about nature, animals and science; or simply relaxing by watching TV or playing
+							video games.
+						</p>
+						<div class="links">
+							<a href="#" target="_blank">CV</a>
+							<a href="https://talent.start2impact.it/profile/mor-fall-diop" target="_blank">Start2Impact portfolio</a>
 						</div>
 					</article>
 				</section>
+				<footer id="contact">
+					<h2 class="h2">Get in touch</h2>
+					<div class="socials">
+						<a class="linkedin" href="https://www.linkedin.com/in/mor-fall-diop-07b40a18b" target="_blank">Li</a>
+						<a class="mail" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=morfall.papydiop99@gmail.com" target="_blank">MA</a>
+						<a class="github" href="https://github.com/diopmorfall" target="_blank">GH</a>
+						<a class="facebook" href="https://www.facebook.com/Mor.Fall.Diop.99" target="_blank">FB</a>
+						<a class="instagram" href="https://www.instagram.com/papy_diop/" target="_blank">IN</a>
+					</div>
+				</footer>
 			</div>
 			<!----------- footer ------------->
-			<footer id="contact" class="footer">
-				<h2 class="h2">CONTACT</h2>
-				<div class="social-box"><!-- link ai social -->
-					<a class="mail" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=morfall.papydiop99@gmail.com" target="_blank"></a>
-					<a class="linkedin" href="https://www.linkedin.com/in/mor-fall-diop-07b40a18b" target="_blank"></a>
-					<a class="github" href="https://github.com/diopmorfall" target="_blank"></a>
-					<a class="facebook" href="https://www.facebook.com/Mor.Fall.Diop.99" target="_blank"></a>
-					<a class="instagram" href="https://www.instagram.com/papy_diop/" target="_blank"></a><!-- il link per la mail richiede l'accesso a gmail -->
-				</div>
-			</footer>
 			<script src="/assets/js/animations.js" defer></script>
 		</body>
 	</html>
