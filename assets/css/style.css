@@ -1,9 +1,9 @@
-.flex, .flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, .home a, .links a, body, nav ul, .page, .home, .work-container, .work-container .row, .work-container .row .column, .toolbox .skills-container, .toolbox .skills-grid, .projects, .project-infos, footer, .flex-row, .flex-row-align-center, .skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div, nav, .links, article .links, .socials, nav .mobile-menu {
+.flex, .flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, .home a, .links a, body, nav ul, .menu-icons, .page, .home, .work-container, .work-container .row, .work-container .row .column, .toolbox .skills-container, .toolbox .skills-grid, .projects, .project-infos, footer, .flex-row, .flex-row-align-center, .skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div, nav, .links, article .links, .socials, nav .mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, .home a, .links a, body, nav ul, .page, .home, .work-container, .work-container .row, .work-container .row .column, .toolbox .skills-container, .toolbox .skills-grid, .projects, .project-infos, footer {
+.flex-column, .flex-align-center, .flex-full-center, nav ul li, .flex-justify-center, .home a, .links a, body, nav ul, .menu-icons, .page, .home, .work-container, .work-container .row, .work-container .row .column, .toolbox .skills-container, .toolbox .skills-grid, .projects, .project-infos, footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -38,17 +38,20 @@
 .relative, body, .page, .page section, footer {
   position: relative; }
 
-.absolute, nav .mobile-menu, nav .mobile-menu::before {
+.absolute, nav .mobile-menu {
   position: absolute; }
 
-.hidden, nav .mobile-menu, nav .menu:last-of-type, .divides {
+.hidden, nav .mobile-menu, .menu-icons .menu-icon:last-of-type, .divides {
   display: none; }
 
 .skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 20%;
-  background-color: lime; }
+      justify-content: space-around; }
+  .skills-row img, .toolbox .skills-grid > div img, .toolbox .current-skills > div img {
+    height: 55px; }
+  .skills-row figcaption, .toolbox .skills-grid > div figcaption, .toolbox .current-skills > div figcaption {
+    text-align: center;
+    font-size: 13px; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -57,15 +60,10 @@
   padding: 0;
   scroll-behavior: smooth; }
 
-@font-face {
-  font-family: 'social';
-  src: url(../font/social.woff) format("woff");
-  font-weight: 400;
-  font-size: 20px; }
-
 body {
   width: 100vw;
   background-color: #7ed957;
+  font-family: "JetBrains Mono", monospace;
   font-size: 16px;
   color: white; }
 
@@ -85,45 +83,48 @@ nav {
   nav .brand {
     font-size: 20px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     color: white; }
   nav .mobile-menu {
-    top: 60px;
-    width: 85%;
-    height: 330px;
+    left: 0;
+    top: 50px;
+    width: 100vw;
+    height: 95vh;
     margin: 0 auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: white;
+    background-color: lightgreen;
     z-index: 2; }
-    nav .mobile-menu::before {
-      content: "";
-      width: 0;
-      height: 0;
-      right: 0;
-      top: -30px;
-      border-bottom: 35px solid white;
-      border-left: 35px solid transparent;
-      z-index: 2; }
   nav ul {
     width: 70%;
-    height: 80%;
+    height: 60%;
     margin: auto;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    list-style-type: none;
-    border: 2px solid red; }
+    list-style-type: none; }
     nav ul li {
       height: 15%; }
       nav ul li a {
         text-decoration: none;
         color: black; }
+      nav ul li:nth-of-type(2) {
+        display: none; }
       nav ul li:last-of-type {
-        height: 20%;
+        height: 15%;
         border-radius: 100px;
-        background-color: darkgreen; }
+        background-color: darkgreen;
+        text-transform: uppercase; }
+
+.menu-icons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .menu-icons img {
+    width: 20px;
+    -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(99%) saturate(0%) hue-rotate(319deg) brightness(104%) contrast(100%);
+            filter: brightness(0) saturate(100%) invert(99%) sepia(99%) saturate(0%) hue-rotate(319deg) brightness(104%) contrast(100%); }
 
 .page {
   -ms-flex-pack: distribute;
@@ -148,8 +149,10 @@ nav {
     font-style: italic; }
     .home .text p, .home .text h1 {
       margin-bottom: 25px; }
+    .home .text h1 {
+      font-weight: 600; }
   .home a {
-    width: 60%;
+    width: 200px;
     margin: auto;
     height: 40px;
     background-color: darkgreen;
@@ -157,44 +160,50 @@ nav {
     text-decoration: none;
     color: white; }
 
-.work-container h2 {
-  display: none; }
-
 .work-container .row .column {
-  height: 100vh;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px; }
 
-.toolbox .skills-container {
-  height: 90%; }
+.work-container h2 {
+  font-weight: 600;
+  margin-bottom: 40px; }
 
-.toolbox .skills-grid {
-  height: 60%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.toolbox .current-skills h4 {
-  padding-top: 40px;
-  margin-bottom: 20px; }
-
-.toolbox .current-skills .skills-row, .toolbox .current-skills .skills-grid > div, .toolbox .current-skills > div {
-  height: 70%; }
+.toolbox {
+  height: 95vh; }
+  .toolbox .skills-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 500px; }
+  .toolbox .skills-grid {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 60%; }
+  .toolbox .current-skills h4 {
+    font-weight: 600;
+    margin-bottom: 20px; }
+  .toolbox .current-skills img {
+    height: 65px; }
 
 .projects {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .projects h3 {
-    margin-bottom: 40px; }
+          justify-content: space-between;
+  height: 700px; }
 
 .slider {
-  width: 80%;
-  margin: 0 auto;
-  height: 45%;
+  width: 260px;
+  margin: auto;
+  height: 40%;
   background-color: darkgreen; }
 
 .project-infos {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  .project-infos h4 {
+    margin-top: 30px;
+    margin-bottom: 30px; }
   .project-infos p {
     padding: 0 20px 50px 20px; }
 
@@ -204,7 +213,7 @@ nav {
   .links a {
     background-color: darkgreen;
     height: 40px;
-    width: 30%;
+    width: 100px;
     border-radius: 100px;
     color: white;
     text-decoration: none; }
@@ -229,8 +238,14 @@ article {
     width: 220px;
     margin: auto; }
   article p {
+    width: 90%;
+    margin: auto;
     padding: 10px 20px;
-    margin-bottom: 40px; }
+    margin-bottom: 30px;
+    line-height: 25px; }
+    article p a {
+      color: white;
+      text-decoration: underline; }
   article .links {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -239,27 +254,26 @@ article {
             align-items: center;
     text-align: center; }
     article .links a:first-of-type {
-      width: 30%; }
+      width: 85px; }
     article .links a:last-of-type {
-      width: 45%; }
+      width: 160px; }
 
 footer {
-  height: 200px;
+  height: 150px;
+  margin-top: 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
-  border: 2px solid black; }
+  text-align: center; }
   footer h2 {
     margin-bottom: 50px; }
 
 .socials {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border: 1px solid red;
-  width: 90%;
-  margin: auto; }
+  position: relative;
+  bottom: 30%;
+  width: 80%;
+  margin: 0 auto; }
+  .socials a img {
+    height: 35px; }

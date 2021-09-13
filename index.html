@@ -5,8 +5,8 @@
 			<meta name="author" content="Mor Fall Diop">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="icon" href="img/icon.ico" type="image/x-icon">
-			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 			<link rel="stylesheet" href="/assets/css/style.css">
 			<title>Mor Fall Diop</title>
 		</head>
@@ -15,19 +15,19 @@
 				<a class="brand" href="index.html">Mor Fall Diop</a>
 				<div class="mobile-menu">
 					<ul>
-						<li><a class="nav-link" href="index.html">Home</a></li>
-						<li><a class="nav-link" href="index.html#work" onclick="closeMenu()">Work</a></li>
-						<li><a class="nav-link" href="index.html#work.1" onclick="closeMenu()">Storyline</a></li>
-						<li><a class="nav-link" href="index.html#work.2" onclick="closeMenu()">Development skills</a></li>
-						<li><a class="nav-link" href="index.html#about" onclick="closeMenu()">About</a></li>
-						<li><a class="nav-link" href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#work" onclick="closeMenu()">Work</a></li>
+						<li><a href="index.html#toolbox" onclick="closeMenu()">Toolbox</a></li>
+						<li><a href="index.html#projects" onclick="closeMenu()">Projects</a></li>
+						<li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+						<li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
 					</ul>
 				</div>
 				<!--------------- menu for mobile devices ------------------>
-				<!--todo: addeventlistener, so that it stays only in the js file -->
+				<!--todo: addeventlistener for each event, so that they stay only in the js file -->
 				<div class="menu-icons">
-					<i class="material-icons menu" onclick="openMenu()">menu</i>
-					<i class="material-icons menu" onclick="closeMenu()">close</i>
+					<img src="/assets/img/mobile/open-menu.svg" class="menu-icon" alt="Open menu">
+					<img src="/assets/img/mobile/close-menu.svg" class="menu-icon" alt="Close menu">
 				</div>
 			</nav>
 			<!--todo: it's not 100% responsive, let's find out why -->
@@ -41,75 +41,95 @@
 						<h1>MOR FALL DIOP</h1>
 						<p>aspiring <span>Web Developer</span></p>
 					</div>
-					<a href="index.html#work">Take a look at my work</a>
+					<a href="index.html#work">Look at my work</a>
 				</section>
 			<!------------- skills ---------------->
 				<section id="work" class="work-container">
-					<h2 class="h2">WORK</h2>
 					<div class="row">
 						<!--------- toolbox ------------>
 						<div id="toolbox" class="column toolbox">
-							<h3 class="h3">Toolbox</h3>
+							<h2>Toolbox</h2>
 							<div class="skills-container">
 								<div class="skills-grid">
 									<div>
-										<div class="item">
-											Img
-										</div>
-										<div class="item">
-											Room
-										</div>
-										<div class="item">
-											Punk
-										</div>
+										<figure>
+											<img src="/assets/img/html5.svg" alt="HTML5">
+											<figcaption>HTML5</figcaption>
+										</figure>
+										<figure>
+											<img src="/assets/img/css.svg" alt="CSS3">
+											<figcaption>CSS3</figcaption>
+										</figure>
+										<figure>
+											<img src="/assets/img/sass.svg" alt="Sass">
+											<figcaption>Sass</figcaption>
+										</figure>
 									</div>
 									<div>
-										<div class="item">
-											Gear
-										</div>
-										<div class="item">
-											Nitoryu
-										</div>
-										<div class="item">
-											Jambe
-										</div>
+										<figure>
+											<img src="/assets/img/js.svg" alt="JavaScript">
+											<figcaption>JavaScript</figcaption>
+										</figure>
+										<figure>
+											<img src="/assets/img/bootstrap.svg" alt="Bootstrap">
+											<figcaption>Bootstrap</figcaption>
+										</figure>
+										<!--? to be added later -->
+										<!--
+										<figure>
+											<img src="/assets/img/php.svg" alt="PHP">
+											<figcaption>PHP</figcaption>
+										</figure>
+										-->
 									</div>
+									<!--
 									<div>
-										<div class="item">
-											Point
-										</div>
-										<div class="item">
-											Solid
-										</div>
+										<figure>
+											<img src="/assets/img/sql.svg" alt="MySQL">
+											<figcaption>MySQL</figcaption>
+										</figure>
 									</div>
-									
-									<!--todo: look for svg icons of your skills -->
+									-->
+									<div>
+										<figure>
+											<img src="/assets/img/git.svg" alt="Git">
+											<figcaption>Git</figcaption>
+										</figure>
+										<figure>
+											<img src="/assets/img/github.svg" alt="GitHub">
+											<figcaption>GitHub</figcaption>
+										</figure>
+										<figure>
+											<img src="/assets/img/vscode.svg" alt="VSCode">
+											<figcaption>VSCode</figcaption>
+										</figure>
+									</div>
 								</div>
 								<div class="current-skills">
 									<h4>Currently improving my knowledge and understanding in:</h4>
 									<div>
-										<div class="item">
-											Fleur
-										</div>
-										<div class="item">
-											Tempo
-										</div>
+										<figure>
+											<img src="/assets/img/responsive-design.svg" alt="Responsive Design">
+											<figcaption>Responsive design</figcaption>
+										</figure>
 									</div>
+
 								</div>
 							</div>
 						</div>
 						<div class="divides"></div>
 						<!-------- projects -------->
 						<div id="projects" class="column projects">
-							<h3 class="h3">Projects</h3>
+							<h2>Projects</h2>
 							<div class="slider">
 								<!--todo: take screenshots of your projects -->
 							</div>
 							<div class="project-infos">
 								<h4>Project title</h4>
-								<p>Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis veritatis nihil
-									aliquid, facere iste consequatur perspiciatis impedit expedita autem voluptatum at ipsa rerum hic
-									distinctio, aspernatur ut nulla sint voluptas. </p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis veritatis nihil
+									aliquid, facere iste consequatur perspiciatis impedit expedita autem voluptatum at ipsa rerum.
+								</p>
 								<div class="links">
 									<a href="#" target="_blank">Live</a>
 									<a href="#" target="_blank">Source</a>
@@ -123,10 +143,11 @@
 					<h2 class="h2">Who am I ?</h2>
 					<article>
 						<img src="/assets/img/Mor Fall Diop.png" alt="My picture">
-						<p>Hi there! I'm Mor Fall, a 22 years old Senegal native guy living in Italy.<br><br>
+						<p>
+							Hi there! I'm Mor Fall, a 22 years old Senegal native guy living in Italy.<br><br>
 							My dream is to become a Full Stack Developer: I discovered the basics of web development in high school, but
 							I fell in love with it thanks to a course I attended in 2019.<br><br>
-							I've never worked as a developer yet but I'm aquiring a mindset and technical skills that'll' help me
+							I've never worked as a developer yet but I'm aquiring a mindset and technical skills that'll help me
 							become that figure to make a positive impact, thanks to the online community of
 							<a href="#">start2impact.com</a><br><br>
 							You can also find me watching sports, playing football, reading books or <a href="#">articles</a> to become a
@@ -135,22 +156,32 @@
 						</p>
 						<div class="links">
 							<a href="#" target="_blank">CV</a>
-							<a href="https://talent.start2impact.it/profile/mor-fall-diop" target="_blank">Start2Impact portfolio</a>
+							<a href="https://talent.start2impact.it/profile/mor-fall-diop" target="_blank">S2I portfolio</a>
 						</div>
 					</article>
 				</section>
-				<footer id="contact">
-					<h2 class="h2">Get in touch</h2>
-					<div class="socials">
-						<a class="linkedin" href="https://www.linkedin.com/in/mor-fall-diop-07b40a18b" target="_blank">Li</a>
-						<a class="mail" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=morfall.papydiop99@gmail.com" target="_blank">MA</a>
-						<a class="github" href="https://github.com/diopmorfall" target="_blank">GH</a>
-						<a class="facebook" href="https://www.facebook.com/Mor.Fall.Diop.99" target="_blank">FB</a>
-						<a class="instagram" href="https://www.instagram.com/papy_diop/" target="_blank">IN</a>
-					</div>
-				</footer>
 			</div>
 			<!----------- footer ------------->
+			<footer id="contact">
+				<h2 class="h2">Get in touch</h2>
+				<div class="socials">
+					<a href="https://www.linkedin.com/in/mor-fall-diop-07b40a18b" target="_blank">
+						<img src="/assets/img/linkedin.svg" alt="Linkedin">
+					</a>
+					<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=morfall.papydiop99@gmail.com" target="_blank">
+						<img src="/assets/img/gmail.svg" alt="Mail">
+					</a>
+					<a href="https://github.com/diopmorfall" target="_blank">
+						<img src="/assets/img/github.svg" alt="GitHub">
+					</a>
+					<a href="https://www.facebook.com/Mor.Fall.Diop.99" target="_blank">
+						<img src="/assets/img/facebook.svg" alt="Facebook">
+					</a>
+					<a href="https://www.instagram.com/papy_diop/" target="_blank">
+						<img src="/assets/img/instagram.svg" alt="Instagram">
+					</a>
+				</div>
+			</footer>
 			<script src="/assets/js/animations.js" defer></script>
 		</body>
 	</html>
