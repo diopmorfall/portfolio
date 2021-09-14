@@ -83,7 +83,6 @@ section{
     font-size: 1.7vw;
     font-weight: 400;
     font-style: italic;
-    border: 2px solid red;
 }
 .home > p{
     position: relative;
@@ -176,7 +175,6 @@ section{
 /* ------- first section -------- */
 .work-container{
     height: 100vh;
-    border: 2px solid blue;
 }
 .work-container > h2{
     display: none;
@@ -404,7 +402,6 @@ p > span{ /* parole evidenziate */
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 3px solid green;
 }
 .about-container article{
     position: relative;
@@ -441,7 +438,6 @@ p > span{ /* parole evidenziate */
     text-align: center;
     margin-top: 2%;
     background-image: linear-gradient(to bottom, #75b132 0%, #85e25f 100%);
-    border: 2px solid blueviolet;
 }
 .footer > .h2{
     padding-top: 0;
