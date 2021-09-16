@@ -41,8 +41,128 @@
 .absolute, nav .mobile-menu {
   position: absolute; }
 
-.hidden, nav .mobile-menu, .menu-icons .menu-icon:last-of-type, .divides {
+.hidden, .menu-icons .menu-icon:last-of-type, .divides {
   display: none; }
+
+.a, .home a, .links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white; }
+  .a:active, .home a:active, .links a:active {
+    text-decoration: underline;
+    -webkit-text-decoration-color: lightgreen;
+            text-decoration-color: lightgreen;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 5px; }
+
+@-webkit-keyframes slide-fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.4; } }
+
+@keyframes slide-fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.4; } }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes flick {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    opacity: 0; }
+  85% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flick {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    opacity: 0; }
+  85% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0; }
+  33% {
+    opacity: 1; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  33% {
+    opacity: 1; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.slide-fade-in, .home .home-slider {
+  -webkit-animation: slide-fade-in 1s linear forwards;
+          animation: slide-fade-in 1s linear forwards; }
+
+.slide-fade-out {
+  -webkit-animation: fade-out 1s linear forwards;
+          animation: fade-out 1s linear forwards; }
+
+.fade-in, .home .text p:first-of-type {
+  -webkit-animation: fade-in 1s linear 1s forwards;
+          animation: fade-in 1s linear 1s forwards; }
+
+.menu-fade-in {
+  -webkit-animation: fade-in 0.4s linear forwards;
+          animation: fade-in 0.4s linear forwards; }
+
+.menu-fade-out {
+  -webkit-animation: fade-out 0.4s linear forwards;
+          animation: fade-out 0.4s linear forwards; }
+
+.flick, .home .text h1 {
+  -webkit-animation: flick 2s linear 2s forwards;
+          animation: flick 2s linear 2s forwards; }
+
+.blink, .home a {
+  -webkit-animation: blink 0.25s linear 6s forwards;
+          animation: blink 0.25s linear 6s forwards; }
 
 .skills-row, .toolbox .skills-grid > div, .toolbox .current-skills > div {
   -ms-flex-pack: distribute;
@@ -96,7 +216,9 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     background-color: lightgreen;
-    z-index: 2; }
+    z-index: 2;
+    opacity: 0;
+    display: none; }
   nav ul {
     width: 70%;
     height: 60%;
@@ -106,16 +228,14 @@ nav {
     list-style-type: none; }
     nav ul li {
       height: 15%; }
-      nav ul li a {
+      nav ul li .menu-link {
         text-decoration: none;
         color: black; }
       nav ul li:nth-of-type(2) {
         display: none; }
       nav ul li:last-of-type {
-        height: 15%;
-        border-radius: 100px;
-        background-color: darkgreen;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        letter-spacing: 5px; }
 
 .menu-icons {
   -webkit-box-align: center;
@@ -140,25 +260,39 @@ nav {
       justify-content: space-around;
   height: 95vh;
   text-align: center; }
-  .home img {
-    width: 275px;
+  .home .home-slider {
+    position: relative;
+    top: -5px;
+    width: 280px;
+    height: 250px;
     margin: auto;
-    opacity: 0.4;
-    border-radius: 150px; }
+    opacity: 0.4; }
+    .home .home-slider img {
+      width: 100%;
+      height: 100%;
+      border-radius: 120px; }
+  .home .item {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 80%;
+    width: 100%;
+    display: none; }
+  .home .item:first-of-type {
+    display: block; }
   .home .text {
     font-style: italic; }
     .home .text p, .home .text h1 {
-      margin-bottom: 25px; }
-    .home .text h1 {
-      font-weight: 600; }
+      margin-bottom: 25px;
+      opacity: 0; }
+    .home .text p:last-of-type {
+      -webkit-animation: fade-in 1s linear 4s forwards;
+              animation: fade-in 1s linear 4s forwards; }
   .home a {
-    width: 200px;
     margin: auto;
-    height: 40px;
-    background-color: darkgreen;
     border-radius: 100px;
-    text-decoration: none;
-    color: white; }
+    opacity: 0; }
 
 .work-container .row .column {
   text-align: center;
@@ -190,19 +324,34 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 700px; }
+  height: 850px; }
 
 .slider {
-  width: 260px;
+  position: relative;
+  top: -20px;
+  width: 300px;
   margin: auto;
-  height: 40%;
-  background-color: darkgreen; }
+  min-height: 460px;
+  max-height: 460px; }
+  .slider .project {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+    display: none; }
+    .slider .project img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px; }
+  .slider .project:first-of-type {
+    display: block; }
+  .slider .wider {
+    width: 90%; }
 
 .project-infos {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .project-infos h4 {
-    margin-top: 30px;
     margin-bottom: 30px; }
   .project-infos p {
     padding: 0 20px 50px 20px; }
@@ -210,13 +359,6 @@ nav {
 .links {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .links a {
-    background-color: darkgreen;
-    height: 40px;
-    width: 100px;
-    border-radius: 100px;
-    color: white;
-    text-decoration: none; }
 
 .about-container h2 {
   text-align: center;
