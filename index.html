@@ -13,69 +13,68 @@
 		<body>
 			<nav>
 				<a class="brand" href="index.html">Mor Fall Diop</a>
-				<div class="mobile-menu">
+				<div class="menu">
 					<ul>
 						<li><a class="menu-link" href="index.html">Home</a></li>
-						<li><a class="menu-link" href="index.html#work">Work</a></li>
 						<li><a class="menu-link" href="index.html#toolbox">Toolbox</a></li>
 						<li><a class="menu-link" href="index.html#projects">Projects</a></li>
 						<li><a class="menu-link" href="index.html#about">About</a></li>
-						<li><a class="menu-link" href="index.html#contact">Contact</a></li>
+						<li><a class="menu-link letter-spacing" href="index.html#contact">Contact</a></li>
 					</ul>
 				</div>
 				<!--------------- menu for mobile devices ------------------>
-				<!--todo: addeventlistener for each event, so that they stay only in the js file -->
 				<div class="menu-icons">
 					<img src="/assets/img/mobile/open-menu.svg" class="menu-icon" alt="Open menu">
 					<img src="/assets/img/mobile/close-menu.svg" class="menu-icon hidden" alt="Close menu">
 				</div>
 			</nav>
-			<!--todo: it's not 100% responsive, let's find out why -->
 			<div class="page">
 			<!------- home --------->
 				<section class="home">
-					<div class="home-slider">
-						<div class="item">
-							<img src="/assets/img/mobile/1.jpg" alt="First item slider"
-								srcset="/assets/img/mobile/1.jpg 640w, /assets/img/desktop/1.jpg 1920w"
-								sizes="(max-width: 889px) 275px, 500px"
-							>
+					<div class="row-desktop">
+						<div class="home-slider">
+							<div class="item">
+								<img src="/assets/img/mobile/1.jpg" alt="First item slider"
+									srcset="/assets/img/mobile/1.jpg 640w, /assets/img/desktop/1.jpg 1920w"
+									sizes="(max-width: 889px) 275px, 500px"
+								>
+							</div>
+							<div class="item">
+								<img src="/assets/img/mobile/2.jpg" alt="Second item slider"
+									srcset="/assets/img/mobile/2.jpg 640w, /assets/img/desktop/2.jpg 1920w"
+									sizes="(max-width: 889px) 275px, 500px"
+								>
+							</div>
+							<div class="item">
+								<img src="/assets/img/mobile/3.jpg" alt="Third item slider"
+									srcset="/assets/img/mobile/3.jpg 640w, /assets/img/desktop/3.jpg 1920w"
+									sizes="(max-width: 889px) 275px, 500px"
+								>
+							</div>
+							<div class="item">
+								<img src="/assets/img/mobile/4.jpg" alt="Fourth item slider"
+									srcset="/assets/img/mobile/4.jpg 640w, /assets/img/desktop/4.jpg 1920w"
+									sizes="(max-width: 889px) 275px, 500px"
+								>
+							</div>
+							<div class="item">
+								<img src="/assets/img/mobile/5.jpg" alt="Fifth item slider"
+									srcset="/assets/img/mobile/5.jpg 640w, /assets/img/desktop/5.jpg 1920w"
+									sizes="(max-width: 889px) 275px, 500px"
+								>
+							</div>
+							<!--todo: slider of code-related images (to be changed with srcset) -->
 						</div>
-						<div class="item">
-							<img src="/assets/img/mobile/2.jpg" alt="Second item slider"
-								srcset="/assets/img/mobile/2.jpg 640w, /assets/img/desktop/2.jpg 1920w"
-								sizes="(max-width: 889px) 275px, 500px"
-							>
+						<div class="text">
+							<p>Hi everyone, I am</p>
+							<h1>MOR FALL DIOP</h1>
+							<p>aspiring <span>Web Developer</span></p>
 						</div>
-						<div class="item">
-							<img src="/assets/img/mobile/3.jpg" alt="Third item slider"
-								srcset="/assets/img/mobile/3.jpg 640w, /assets/img/desktop/3.jpg 1920w"
-								sizes="(max-width: 889px) 275px, 500px"
-							>
-						</div>
-						<div class="item">
-							<img src="/assets/img/mobile/4.jpg" alt="Fourth item slider"
-								srcset="/assets/img/mobile/4.jpg 640w, /assets/img/desktop/4.jpg 1920w"
-								sizes="(max-width: 889px) 275px, 500px"
-							>
-						</div>
-						<div class="item">
-							<img src="/assets/img/mobile/5.jpg" alt="Fifth item slider"
-								srcset="/assets/img/mobile/5.jpg 640w, /assets/img/desktop/5.jpg 1920w"
-								sizes="(max-width: 889px) 275px, 500px"
-							>
-						</div>
-						<!--todo: slider of code-related images (to be changed with srcset) -->
 					</div>
-					<div class="text">
-						<p>Hi everyone, I am</p>
-						<h1>MOR FALL DIOP</h1>
-						<p>aspiring <span>Web Developer</span></p>
-					</div>
-					<a href="index.html#toolbox">Look at my work</a>
+					<a href="index.html#toolbox">Take a look at my work</a>
 				</section>
 			<!------------- skills ---------------->
-				<section id="work" class="work-container">
+				<section class="work-container">
 					<div class="row">
 						<!--------- toolbox ------------>
 						<div id="toolbox" class="column toolbox">
@@ -137,7 +136,7 @@
 									</div>
 								</div>
 								<div class="current-skills">
-									<h4>Currently improving my knowledge and understanding in:</h4>
+									<h4>Currently learning and practising:</h4>
 									<div>
 										<figure>
 											<img src="/assets/img/responsive-design.svg" alt="Responsive Design">
@@ -147,41 +146,42 @@
 								</div>
 							</div>
 						</div>
-						<div class="divides"></div>
 						<!-------- projects -------->
 						<div id="projects" class="column projects">
 							<h2>Projects</h2>
-							<div class="slider">
-								<div class="project">
-									<img src="/assets/img/mobile/sunnyside-agency.png"
-										alt="Sunnyside agency landing page"
-										srcset="/assets/img/mobile/sunnyside-agency.png 229w,
-											/assets/img/desktop/sunnyside-agency.png 893w"
-										sizes="(max-width: 889px) 250px, 500px"
-									>
+							<div class="desktop-row">
+								<div class="slider">
+									<div class="project">
+										<img src="/assets/img/mobile/sunnyside-agency.png"
+											alt="Sunnyside agency landing page"
+											srcset="/assets/img/mobile/sunnyside-agency.png 229w,
+												/assets/img/desktop/sunnyside-agency.png 893w"
+											sizes="(max-width: 999px) 250px, 500px"
+										>
+									</div>
+									<div class="project">
+										<img src="/assets/img/mobile/four-card-section.png"
+											alt="Four card section page"
+											srcset="/assets/img/mobile/four-card-section.png 257w,
+												/assets/img/desktop/four-card-section.png 900w"
+											sizes="(max-width: 999px) 250px, 500px"
+										>
+									</div>
+									<div class="project wider">
+										<img src="/assets/img/order-summary.png"
+											alt="Order summary component"
+											srcset="/assets/img/order-summary.png 509w"
+											sizes="(max-width: 999px) 250px, 500px"
+										>
+									</div>
 								</div>
-								<div class="project">
-									<img src="/assets/img/mobile/four-card-section.png"
-										alt="Four card section page"
-										srcset="/assets/img/mobile/four-card-section.png 257w,
-											/assets/img/mobile/four-card-section.png 1797w"
-										sizes="(max-width: 889px) 250px, 500px"
-									>
-								</div>
-								<div class="project wider">
-									<img src="/assets/img/order-summary.png"
-										alt="Order summary component"
-										srcset="/assets/img/order-summary.png 509w"
-										sizes="(max-width: 889px) 250px, 500px"
-									>
-								</div>
-							</div>
-							<div class="project-infos">
-								<h4></h4>
-								<p></p>
-								<div class="links">
-									<a href="" target="_blank">Live</a>
-									<a href="" target="_blank">Source</a>
+								<div class="project-infos">
+									<h4></h4>
+									<p></p>
+									<div class="links">
+										<a href="" target="_blank">Live</a>
+										<a href="" target="_blank">Source</a>
+									</div>
 								</div>
 							</div>
 						</div>	
@@ -189,7 +189,7 @@
 				</section>
 			<!--------------- about me ---------------->
 				<section id="about" class="about-container">
-					<h2 class="h2">Who am I ?</h2>
+					<h2>Who am I ?</h2>
 					<article>
 						<img src="/assets/img/Mor Fall Diop.png" alt="My picture">
 						<p>
@@ -198,13 +198,12 @@
 							I fell in love with it thanks to a course I attended in 2019.<br><br>
 							I've never worked as a developer yet but I'm aquiring a mindset and technical skills that'll help me
 							become that figure to make a positive impact, thanks to the online community of
-							<a href="#">start2impact.com</a><br><br>
-							You can also find me watching sports, playing football, reading books or <a href="#">articles</a> to become a
-							better person, doing research about nature, animals and science; or simply relaxing by watching TV or playing
-							video games.
+							<a href="https://www.start2impact.it/">start2impact.com</a><br><br>
+							You can also find me watching sports, playing football, reading books or <a href="https://medium.com/@Papy_Diop">articles</a>,
+							doing research about nature, animals and science; or simply relaxing by watching TV or playing video games.
 						</p>
 						<div class="links">
-							<a href="#" target="_blank">CV</a>
+							<a href="https://drive.google.com/file/d/1dGVpehrMUTyTlRpWxB9QLcLnIVY3F3RX/view?usp=sharing" target="_blank">CV</a>
 							<a href="https://talent.start2impact.it/profile/mor-fall-diop" target="_blank">S2I portfolio</a>
 						</div>
 					</article>
@@ -212,7 +211,7 @@
 			</div>
 			<!----------- footer ------------->
 			<footer id="contact">
-				<h2 class="h2">Get in touch</h2>
+				<h2>Get in touch</h2>
 				<div class="socials">
 					<a href="https://www.linkedin.com/in/mor-fall-diop-07b40a18b" target="_blank">
 						<img src="/assets/img/linkedin.svg" alt="Linkedin">
