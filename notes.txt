@@ -1,8 +1,0 @@
-Media queries
-    style.css
-    responsive.css
-        x > 1350
-        901 > x > 1279 tablet landscape
-        551 > x > 1200 tablet portrait
-        480 > x > 900 mobile landscape
-        x < 550 mobile portrait
