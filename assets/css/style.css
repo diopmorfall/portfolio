@@ -590,8 +590,7 @@ footer {
     text-decoration: none; }
   article {
     display: block;
-    padding-top: 50px;
-    overflow: hidden; }
+    padding-top: 50px; }
     article img {
       margin: 0;
       float: left;

@@ -46,9 +46,8 @@ function showProjects(){
 
 	projects[index - 1].style.display = 'block';
 	//console.log(projects[index - 1].children[0].src);
-	setDetails(index -1);
+	setDetails(index - 1);
 	timeout = setTimeout(showProjects, 15000);
-	//todo: fadein, show, fadeout, repeat with the next
 }
 
 function setDetails(projectIndex){

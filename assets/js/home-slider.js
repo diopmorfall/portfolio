@@ -17,6 +17,4 @@ function showImages(){
 	images[imgIndex - 1].style.display = 'block';
 	//console.log(images[imgIndex - 1].children[0].src);
 	timing = setTimeout(showImages, 2500);
-	//todo: add some animation classes that'll be added/removed to show fadein/out effects
 }
-//? image fades-in, fades out and then repeat with the next
