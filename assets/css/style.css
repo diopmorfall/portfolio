@@ -57,13 +57,13 @@
   margin: auto; }
 
 .img-color, .skills-row img, .toolbox .skills-grid > div img, .toolbox .current-skills > div img, .menu-icons, .socials a img {
-  -webkit-filter: brightness(0) saturate(100%) invert(14%) sepia(28%) saturate(5728%) hue-rotate(197deg) brightness(94%) contrast(96%);
-          filter: brightness(0) saturate(100%) invert(14%) sepia(28%) saturate(5728%) hue-rotate(197deg) brightness(94%) contrast(96%); }
+  -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(22deg) brightness(101%) contrast(103%);
+          filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(22deg) brightness(101%) contrast(103%); }
 
 .a, .home a, .links a, article .links a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #edf5e1; }
+  color: rgba(0, 0, 0, 0.75); }
   .a:active, nav ul li .menu-link:active, .home a:active, .links a:active {
     text-decoration: underline;
     -webkit-text-decoration-color: #379683;
@@ -219,7 +219,7 @@ body {
   background-color: #5cdb95;
   font-family: "JetBrains Mono", monospace;
   font-size: 16px;
-  color: #edf5e1; }
+  color: rgba(0, 0, 0, 0.75); }
 
 nav {
   position: fixed;
@@ -228,13 +228,13 @@ nav {
   height: 50px;
   padding: 0 25px 0 25px;
   background-color: #5cdb95;
-  color: #05386b; }
+  color: #000000; }
   nav .brand {
     font-size: 16px;
     font-style: italic;
     font-weight: 600;
     text-decoration: none;
-    color: #05386b; }
+    color: #000000; }
   nav .menu {
     left: 0;
     top: 50px;
@@ -256,10 +256,10 @@ nav {
       height: 15%; }
       nav ul li .menu-link {
         font-weight: 600;
-        color: #05386b;
+        color: #000000;
         text-decoration: none; }
         nav ul li .menu-link:visited {
-          color: #05386b; }
+          color: #000000; }
       nav ul li:last-of-type {
         font-size: 20px;
         text-transform: uppercase;
@@ -316,7 +316,7 @@ nav {
 h2 {
   font-weight: 600;
   margin-bottom: 40px;
-  color: #05386b; }
+  color: #000000; }
 
 .work-container .row .column {
   text-align: center;
@@ -377,7 +377,7 @@ article p {
   margin-bottom: 30px;
   line-height: 25px; }
   article p a {
-    color: #edf5e1;
+    color: rgba(0, 0, 0, 0.75);
     text-decoration: underline; }
 
 article .links {
@@ -449,9 +449,9 @@ footer {
       nav ul li .menu-link {
         font-size: 16px; }
         nav ul li .menu-link:active {
-          color: #edf5e1; }
+          color: rgba(0, 0, 0, 0.75); }
         nav ul li .menu-link:visited {
-          color: #05386b;
+          color: #000000;
           text-decoration: none; }
       nav ul li:last-of-type {
         letter-spacing: 0; }
@@ -502,9 +502,9 @@ footer {
                 text-decoration-color: #379683;
         text-decoration-thickness: 4px; }
       nav ul li .menu-link:active {
-        color: #edf5e1; }
+        color: rgba(0, 0, 0, 0.75); }
       nav ul li .menu-link:visited {
-        color: #05386b; }
+        color: #000000; }
       nav ul li .letter-spacing:hover {
         text-decoration: none;
         letter-spacing: 3px; }
@@ -533,9 +533,9 @@ footer {
     .home a:hover {
       text-decoration: underline; }
     .home a:active {
-      color: #05386b; }
+      color: #000000; }
     .home a:visited {
-      color: #edf5e1; }
+      color: rgba(0, 0, 0, 0.75); }
   .toolbox {
     height: 450px; }
     .toolbox .skills-container {
@@ -586,7 +586,7 @@ footer {
     background-color: #379683;
     text-decoration: underline; }
   .links a:visited {
-    color: #edf5e1;
+    color: rgba(0, 0, 0, 0.75);
     text-decoration: none; }
   article {
     display: block;
@@ -598,10 +598,12 @@ footer {
     article p {
       width: 60%;
       overflow: hidden; }
+      article p a:hover {
+        opacity: 0.5; }
       article p a:active {
         background-color: #379683; }
       article p a:visited {
-        color: #edf5e1; }
+        color: rgba(0, 0, 0, 0.75); }
     article .links {
       width: 60%;
       position: relative;
@@ -609,5 +611,4 @@ footer {
   .socials {
     width: 550px; }
     .socials a:hover img, .socials a:active img {
-      -webkit-filter: brightness(0) saturate(100%) invert(90%) sepia(22%) saturate(154%) hue-rotate(50deg) brightness(107%) contrast(92%);
-              filter: brightness(0) saturate(100%) invert(90%) sepia(22%) saturate(154%) hue-rotate(50deg) brightness(107%) contrast(92%); } }
+      opacity: 0.5; } }
