@@ -44,7 +44,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.relative, body, .page, .page section, .home .home-slider, footer, .socials {
+.relative, .page, .page section, .home .home-slider, footer, .socials {
   position: relative; }
 
 .absolute, nav .menu {
@@ -187,7 +187,7 @@
     height: 55px; }
   .skills-row figcaption, .toolbox .skills-grid > div figcaption, .toolbox .current-skills > div figcaption {
     text-align: center;
-    font-size: 15px; }
+    font-size: 16px; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -218,7 +218,7 @@ body {
   width: 100%;
   background-color: #5cdb95;
   font-family: "JetBrains Mono", monospace;
-  font-size: 16px;
+  font-size: 17px;
   color: rgba(0, 0, 0, 0.75); }
 
 nav {
@@ -334,18 +334,20 @@ h2 {
     font-weight: 600;
     margin-bottom: 20px;
     padding: 0 10px 0 10px; }
-  .toolbox .current-skills img {
-    height: 65px; }
+  .toolbox .current-skills figure img {
+    height: 40px; }
+  .toolbox .current-skills figure figcaption {
+    font-size: 15px; }
 
 .projects .desktop-row {
   height: 850px; }
 
 .slider {
-  width: 350px;
+  width: 100%;
   min-height: 460px;
   max-height: 460px; }
   .slider .project {
-    width: 60%;
+    width: 65%;
     height: 100%;
     margin: 0 auto;
     opacity: 0.6;
@@ -369,7 +371,7 @@ h2 {
 
 article img {
   display: block;
-  width: 220px; }
+  width: 200px; }
 
 article p {
   width: 90%;
@@ -467,6 +469,9 @@ footer {
     margin: auto; }
   .toolbox .skills-grid > div:nth-of-type(2) {
     width: 60%; }
+  .toolbox .current-skills {
+    width: 70%;
+    margin: auto; }
   .projects .desktop-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -483,6 +488,8 @@ footer {
       margin-bottom: 0; }
     .project-infos p {
       text-align: left; }
+  article img {
+    margin-bottom: 50px; }
   .socials {
     width: 450px; } }
 
@@ -491,20 +498,24 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0 50px 0 50px; }
+    padding: 30px; }
+    nav .brand {
+      font-size: 20px; }
     nav .menu {
       width: 45%; }
     nav ul li {
       width: 15%; }
-      nav ul li .menu-link:hover {
-        text-decoration: underline;
-        -webkit-text-decoration-color: #379683;
-                text-decoration-color: #379683;
-        text-decoration-thickness: 4px; }
-      nav ul li .menu-link:active {
-        color: rgba(0, 0, 0, 0.75); }
-      nav ul li .menu-link:visited {
-        color: #000000; }
+      nav ul li .menu-link {
+        font-size: 16px; }
+        nav ul li .menu-link:hover {
+          text-decoration: underline;
+          -webkit-text-decoration-color: #379683;
+                  text-decoration-color: #379683;
+          text-decoration-thickness: 4px; }
+        nav ul li .menu-link:active {
+          color: rgba(0, 0, 0, 0.75); }
+        nav ul li .menu-link:visited {
+          color: #000000; }
       nav ul li .letter-spacing:hover {
         text-decoration: none;
         letter-spacing: 3px; }
@@ -554,6 +565,9 @@ footer {
         height: 40px; }
     .toolbox .skills-grid > div:nth-of-type(2) {
       width: 30%; }
+    .toolbox .current-skills {
+      width: 55%;
+      margin: auto; }
     .toolbox .current-skills > div img {
       height: 50px; }
   .projects .desktop-row {
@@ -571,7 +585,7 @@ footer {
       width: 100%; }
   .project-infos {
     width: 45%;
-    height: 50%;
+    height: 70%;
     margin: auto; }
     .project-infos h4 {
       padding-top: 20px;
@@ -594,7 +608,7 @@ footer {
     article img {
       margin: 0;
       float: left;
-      width: 300px; }
+      width: 250px; }
     article p {
       width: 60%;
       overflow: hidden; }
@@ -612,3 +626,34 @@ footer {
     width: 550px; }
     .socials a:hover img, .socials a:active img {
       opacity: 0.5; } }
+
+@media only screen and (min-width: 1000px) and (min-width: 1200px) {
+  nav .brand {
+    font-size: 28px; }
+  nav ul li .menu-link {
+    font-size: 22px; }
+  .home .home-slider {
+    width: 600px;
+    height: 500px; }
+  .home .text {
+    font-size: 28px; }
+  .home a {
+    font-size: 26px; }
+  h2 {
+    font-size: 34px; }
+  .toolbox .skills-grid > div img, .toolbox .current-skills > div img {
+    height: 55px; }
+  .toolbox .skills-grid > div figcaption, .toolbox .current-skills > div figcaption {
+    font-size: 18px; }
+  .toolbox .current-skills h4 {
+    font-size: 24px; }
+  .project-infos h4 {
+    font-size: 24px; }
+  .project-infos p {
+    font-size: 22px;
+    line-height: 40px; }
+  .links {
+    font-size: 24px; }
+  article p {
+    font-size: 22px;
+    line-height: 30px; } }
