@@ -371,7 +371,8 @@ h2 {
 
 article img {
   display: block;
-  width: 200px; }
+  width: 190px;
+  margin: 30px auto; }
 
 article p {
   width: 90%;
@@ -627,7 +628,7 @@ footer {
     .socials a:hover img, .socials a:active img {
       opacity: 0.5; } }
 
-@media only screen and (min-width: 1000px) and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   nav .brand {
     font-size: 28px; }
   nav ul li .menu-link {
@@ -641,12 +642,15 @@ footer {
     font-size: 26px; }
   h2 {
     font-size: 34px; }
+  .toolbox h2 {
+    margin-bottom: 50px; }
   .toolbox .skills-grid > div img, .toolbox .current-skills > div img {
     height: 55px; }
   .toolbox .skills-grid > div figcaption, .toolbox .current-skills > div figcaption {
     font-size: 18px; }
   .toolbox .current-skills h4 {
-    font-size: 24px; }
+    font-size: 24px;
+    margin: 70px; }
   .project-infos h4 {
     font-size: 24px; }
   .project-infos p {
@@ -656,4 +660,8 @@ footer {
     font-size: 24px; }
   article p {
     font-size: 22px;
-    line-height: 30px; } }
+    line-height: 35px; }
+  article img {
+    width: 300px; }
+  footer h2 {
+    margin-bottom: 80px; } }
