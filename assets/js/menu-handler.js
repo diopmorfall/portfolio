@@ -19,6 +19,10 @@ menuIcons[0].addEventListener('click', function(){
 });
 
 menuIcons[1].addEventListener('click', closeMenu);
-for(let i = 0; i < links.length; i++){
-	links[i].addEventListener('click', closeMenu);
+
+if(!window.matchMedia("(min-width: 850px)").matches){
+    for(let link of links){
+        link.addEventListener('click', closeMenu);
+    }
 }
+
