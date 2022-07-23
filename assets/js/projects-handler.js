@@ -10,21 +10,31 @@ const targetLinks = [
 ];
 
 let projectsArrays = [
+    [
+        "Citylife",
+        `A life quality app built with the Teleport API, that shows the ratings of some big cities around the world`,
+        "https://github.com/diopmorfall/citylife",
+        "https://s2i-jsadvanced-citylife.netlify.app/"
+    ],
 	[
 		"Sunnyside agency landing page",
-		"A great test on responsive layouts and images, with a bit of JavaScript for the mobile menu.<br>Building this was tough, because I didn't know how to handle responsive images with <code>srcset<code> and <code>sizes</code> attributes",
+		`A great test on responsive layouts and images, with a bit of JavaScript for the mobile menu.<br>
+        Building this was tough, because I didn't know how to handle responsive images with <code>srcset<code>
+        and <code>sizes</code> attributes`,
 		"https://diopmorfall.github.io/sunnyside-agency-landing-page-main",
 		"https://github.com/diopmorfall/sunnyside-agency-landing-page-main"
 	],
 	[
 		"Four card feature section master", 
-		"A layout-based project from Frontend Mentor that'll challenge everyone who isn't familiar with responsive and multi-column layouts (like me when I did it)",
+		`A layout-based project from Frontend Mentor that'll challenge everyone who isn't familiar with responsive
+        and multi-column layouts (like me when I did it)`,
 		"https://diopmorfall.github.io/four-card-feature-section-master",
 		"https://github.com/diopmorfall/four-card-feature-section-master"
 	],
 	[
 		"Order Summary component",
-		"A small project for people who are getting started with basic layouts, that I look forward to use in some bigger projects",
+		`A small project for people who are getting started with basic layouts, that I look forward to use in some bigger
+        projects`,
 		"https://diopmorfall.github.io/order-summary-component",
 		"https://github.com/diopmorfall/order-summary-component"
 	]

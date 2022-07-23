@@ -53,7 +53,7 @@
 .hidden, .menu-icons .menu-icon:last-of-type {
   display: none; }
 
-.margin-auto, nav ul, .page, .home .home-slider, .home a, .slider, article p, article img {
+.margin-auto, nav ul, .page, .home .home-slider, .home a, article p, article img {
   margin: auto; }
 
 .img-color, .skills-row img, .toolbox .skills-grid > div img, .toolbox .current-skills > div img, .menu-icons, .socials a img {
@@ -347,10 +347,10 @@ h2 {
   min-height: 460px;
   max-height: 460px; }
   .slider .project {
-    width: 65%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
-    opacity: 0.6;
+    opacity: 0.7;
     display: none; }
     .slider .project img {
       width: 100%;
@@ -420,6 +420,10 @@ footer {
     width: 250px !important;
     height: 200px !important; } }
 
+@media only screen and (min-width: 565px) and (max-width: 649px) {
+  .silder .project {
+    width: 60%; } }
+
 @media only screen and (min-width: 850px) {
   nav {
     -ms-flex-pack: distribute;
@@ -484,7 +488,7 @@ footer {
     margin-top: auto;
     height: 100%; }
   .project-infos {
-    width: 50%; }
+    width: 75%; }
     .project-infos h4 {
       padding-top: 20px;
       margin-bottom: 0; }
@@ -577,12 +581,14 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 550px; }
+    min-height: 400px;
+    max-height: 400px; }
   .slider, .project-infos {
     margin-top: auto;
-    height: 100%; }
+    height: 80%; }
   .slider {
-    width: 55%; }
+    width: 70%;
+    min-height: initial; }
     .slider .project {
       width: 100%; }
   .project-infos {
