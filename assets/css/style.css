@@ -529,7 +529,7 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    width: 85%;
+    width: 90%;
     height: 80%;
     margin: auto; }
   .home .home-slider {
