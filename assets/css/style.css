@@ -581,19 +581,19 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    min-height: 400px;
-    max-height: 400px; }
+    min-height: 450px;
+    max-height: 450px; }
   .slider, .project-infos {
-    margin-top: auto;
-    height: 80%; }
+    margin-top: auto; }
   .slider {
-    width: 70%;
+    width: 60%;
+    height: 90%;
     min-height: initial; }
     .slider .project {
       width: 100%; }
   .project-infos {
     width: 45%;
-    height: 70%;
+    height: 100%;
     margin: auto; }
     .project-infos h4 {
       padding-top: 20px;
