@@ -12,7 +12,8 @@ const targetLinks = [
 let projectsArrays = [
     [
         "Citylife",
-        `A life quality app built with the Teleport API, that shows the ratings of some big cities around the world`,
+        `A life quality app built with the Teleport API, that shows the ratings of some big cities around the world.<br>
+        This is the first project where I applied most of my knowledge about JavaScript`,
         "https://github.com/diopmorfall/citylife",
         "https://s2i-jsadvanced-citylife.netlify.app/"
     ],
