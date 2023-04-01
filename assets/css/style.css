@@ -189,6 +189,10 @@
     text-align: center;
     font-size: 16px; }
 
+@media only screen and (min-width: 1000px) {
+  .skills-row figcaption, .toolbox .skills-grid > div figcaption, .toolbox .current-skills > div figcaption {
+    font-size: 18px; } }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -332,12 +336,14 @@ h2 {
     width: 100%; }
   .toolbox .current-skills h4 {
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     padding: 0 10px 0 10px; }
   .toolbox .current-skills figure img {
     height: 40px; }
-  .toolbox .current-skills figure figcaption {
-    font-size: 15px; }
+
+.highlight {
+  font-style: italic;
+  font-weight: 600; }
 
 .projects .desktop-row {
   height: 850px; }
@@ -383,6 +389,8 @@ article p {
   article p a {
     color: rgba(0, 0, 0, 0.75);
     text-decoration: underline; }
+  article p span:last-of-type {
+    font-style: italic; }
 
 article .links {
   text-align: center; }
@@ -652,12 +660,14 @@ footer {
   .toolbox h2 {
     margin-bottom: 50px; }
   .toolbox .skills-grid > div img, .toolbox .current-skills > div img {
-    height: 55px; }
+    height: 70px; }
   .toolbox .skills-grid > div figcaption, .toolbox .current-skills > div figcaption {
     font-size: 18px; }
   .toolbox .current-skills h4 {
     font-size: 24px;
     margin: 70px; }
+  .projects {
+    margin-top: 50px; }
   .project-infos h4 {
     font-size: 24px; }
   .project-infos p {
@@ -671,4 +681,6 @@ footer {
   article img {
     width: 300px; }
   footer h2 {
-    margin-bottom: 80px; } }
+    margin-bottom: 90px; }
+  .socials a img {
+    height: 50px; } }
