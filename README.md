@@ -61,6 +61,7 @@ What's sure is that I'll continue to update the site with the new projects that 
 - [Frontend Mentor](https://www.frontendmentor.io/profile/diopmorfall) -  This helped me a lot practising all the knowledge I learned, by making challenges and building projects. Check out my profile
 - [WCAG Accessibility Rules - Color Contrast](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum) - Checking this page exposed me to web accessibility for the first time, which made me rethink on some design choices
 - [Color Contrast](https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333) -  An online tool that helps you check if the contrast between the background and the foreground colors is within the WCAG AA/AAA standards.
+- [ai code by Palash Jain from Noun Project (CC BY 3.0)](https://thenounproject.com/browse/icons/term/ai-code/) - The website where I found this licensed icon
 
 ## Author
 
